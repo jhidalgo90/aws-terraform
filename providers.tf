@@ -1,0 +1,13 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "3.74.0"
+    }
+  }
+}
+provider "aws" {
+  region                  = "us-east-1"
+  shared_credentials_file = "C:/Users/jahi/.aws/credentials"
+  profile                 = "svc-terraform"
+}
